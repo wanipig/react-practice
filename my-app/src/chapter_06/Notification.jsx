@@ -24,7 +24,7 @@ class Notification extends React.Component{
 
     render(){
         return(
-            <div style = {styles.wrpaeer}>
+            <div style = {styles.wrapper}>
                 <span style = {styles.messageText}>
                     {this.props.message}
                 </span>
