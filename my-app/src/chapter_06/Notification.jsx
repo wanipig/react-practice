@@ -22,6 +22,18 @@ class Notification extends React.Component{
         this.state = {};
     }
 
+    componentDidMount(){
+        console.log("componentDidMount() called.");
+    }
+    
+    componentDidUpdate(){
+        console.log("componentDidUpdate() called.");
+    }
+
+    componentWillUnmount(){
+        console.log("componentWillUnmount() will called.");
+    }
+
     render(){
         return(
             <div style = {styles.wrapper}>
