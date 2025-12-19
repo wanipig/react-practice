@@ -22,7 +22,7 @@ function Accommodate(props){
         <div style={{padding: 16}}>
             <p>{`총 ${count}명 수용했습니다.`}</p>
 
-            <button onClick = {increaseCount} disable = {isFull}>
+            <button onClick = {increaseCount} disabled = {isFull}>
                 입장
             </button>
             <button onClick = {decreaseCount}>퇴장</button>
