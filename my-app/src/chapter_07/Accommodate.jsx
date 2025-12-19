@@ -1,11 +1,11 @@
 import React, {useState, useEffect} from "react";
-import usecounter from "./useCounter";
+import useCounter from "./useCounter";
 
 const MAX_CAPACITY = 10;
 
 function Accommodate(props){
     const [isFull, setIsFull] = useState(false);
-    const [count, increaseCount, decreaseCount] = useCount(0);
+    const [count, increaseCount, decreaseCount] = useCounter(0);
 
     useEffect(()=>{
         console.log("======================");
