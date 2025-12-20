@@ -2,15 +2,19 @@ import React from "react";
 
 const students = [
     {
+        id: 1,
         name: "Inje",
     },
     {
+        id: 2,
         name: "Steve",
     },
     {
+        id: 3,
         name: "Bill",
     },
     {
+        id: 4,
         name: "Jeff",
     },
 ];
@@ -18,8 +22,8 @@ const students = [
 function AttendanceBook(props){
     return(
         <ul>
-            {students.map((studenct)=>{
-                return <li>{students.name}</li>
+            {students.map((student)=>{
+                return <li key = {student.id}>{student.name}</li>
             })}
         </ul>
     );
