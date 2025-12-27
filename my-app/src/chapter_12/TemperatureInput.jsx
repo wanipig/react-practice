@@ -5,7 +5,7 @@ const scaleNames = {
 
 function TemperatureInput(props) {
     const handleChange = (event) => {
-        props.onTemeperatureChange(event.target.value);
+        props.onTemperatureChange(event.target.value);
     };
 
     return (
